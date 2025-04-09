@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hilal Associates
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link rel="icon" type="image/x-icon" href="assets/associate-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/hilal-logo.png" alt="Logo">
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa fa-bars"></i>
+        </label>
+        <ul>
+            <li><a class="active" href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#why-choose-us">Why Us?</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact-us">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- <section id="hero" class="hero-section">
+        <div class="bg-color">
+            <div class="hero-content">
+                <h1>Empowering Businesses with Trusted Financial & Auditing Solutions</h1>
+                <p>Since 1991, <strong style="color: #115483;">Hilal Associates</strong> has been delivering expert
+                    financial and compliance solutions for
+                    businesses
+                    of all sizes.</p>
+                <a href="#contact" id="myBtn" class="btn-cta">Get a Free Consultation</a>
+            </div>
+           
+        </div>
+    </section> -->
+
+    <section id="hero" class="bg-blue-900 h-screen flex items-center text-white">
+        <main class="container mx-auto p-8 py-0 md:py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-8">
+                <div>
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
+                        Empowering Businesses with Trusted Financial &amp; Auditing Solutions
+                    </h1>
+                    <p class="text-base sm:text-lg mb-6">
+                        Since 1991, <strong class="text-yellow-500">Hilal Associates</strong> has been delivering expert financial and compliance solutions for
+                        businesses of all sizes.
+                    </p>
+                    <a id="myBtn" class="bg-yellow-500 text-blue-900 px-6 py-3 rounded font-bold hover:bg-yellow-600" href="#">
+                        Get a Free Consultation
+                    </a>
+                    <div id="myConsultant" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2 class="font-bold">Book Apointment</h2>
+                            </div>
+                            <div class="modal-body">
+                            </div>
+                            <form id="consultantForm" class="consultant-form"
+                                action="https://script.google.com/macros/s/AKfycbxVjYHW3xx8qiZl38CVk2-orXgTkNYqlssH7TMFkIymUL1asFYrOlC6OClbYGTJSrvW/exec"
+                                method="POST">
+                                <input type="text" name="name" placeholder="Your Name" required>
+                                <input type="email" name="email" placeholder="Your Email" required>
+                                <input type="number" name="mobile" placeholder="Mobile number" required>
+                                <textarea name="message" placeholder="Your Message" required></textarea>
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative hidden md:flex justify-end">
+                    <img alt="Illustration of financial and auditing solutions"
+                        class="rounded-lg shadow-lg w-[500px] h-[360px] object-cover" src="assets/taxs.png" />
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section id="about">
+        <main class="container mx-auto about-section px-4 py-2 md:py-16 ">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800">
+                    About Us
+                </h2>
+                <div class="w-16 h-1 bg-yellow-500 mx-auto mt-2">
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img alt="Graph showing financial growth" class="rounded-lg shadow-lg" src="assets/about.png" />
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <p class="text-gray-600 mb-6">
+                        Hilal Associates is a premier finance and auditing firm with a legacy of over 30+ years,
+                        dedicated
+                        to excellence in customer service. We specialize in providing comprehensive financial services
+                        that
+                        drive business success, ensuring regulatory compliance and financial efficiency.
+                    </p>
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">
+                        Our Core Values
+                    </h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-yellow-500 text-2xl mr-4">
+                            </i>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-800">
+                                    Innovation
+                                </h3>
+                                <p class="text-gray-600">
+                                    Modern financial solutions tailored to your needs.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-yellow-500 text-2xl mr-4">
+                            </i>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-800">
+                                    Integrity
+                                </h3>
+                                <p class="text-gray-600">
+                                    Transparent, ethical, and reliable services.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-yellow-500 text-2xl mr-4">
+                            </i>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-800">
+                                    Customer Focus
+                                </h3>
+                                <p class="text-gray-600">
+                                    Client success is at the heart of our approach.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!-- <section id="about" class="about-section">
+        <h2><strong>About Hilal Associates</strong></h2>
+        <p><strong>Hilal Associates</strong> is a premier finance and auditing firm with a legacy of over 30+ years,
+            dedicated to
+            excellence in customer service. We specialize in providing comprehensive financial services that
+            drive business success, ensuring regulatory compliance and financial efficiency.</p>
+
+        <h3><strong>Our Core Values</strong></h3>
+        <p>We take pride in upholding principles that make us a trusted partner for businesses:</p>
+
+        <p><strong>✅ Innovation:</strong> Modern financial solutions tailored to your needs.</p>
+        <p><strong>✅ Integrity:</strong> Transparent, ethical, and reliable services.</p>
+        <p><strong>✅ Customer Focus:</strong> Client success is at the heart of our approach.</p>
+    </section> -->
+
+    <section id="services" class="services py-2 md:py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800">
+                Our Services
+            </h2>
+            <div class="w-24 sm:w-36 md:w-48 h-1 bg-yellow-500 mx-auto mt-2">
+            </div>
+        </div>
+        <p class="service-intro">We provide a wide range of finance and auditing services to support businesses in their
+            financial journey</p>
+        <div class="service-container">
+            <div class="service-card">
+                <i class="fas fa-file-alt"></i>
+                <h3>GST Registration</h3>
+                <p>Quick and seamless GST registration for your business, handled by experts.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-clipboard-list"></i>
+                <h3>GST Return Filing</h3>
+                <p>Timely and accurate GST return submissions to keep your business compliant.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>GST Compliance & Audit</h3>
+                <p>Comprehensive audits and compliance checks to ensure you meet all requirements.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Tax Advisory</h3>
+                <p>Expert tax advice to help you navigate complex tax scenarios and optimize savings.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-building"></i>
+                <h3>Business Registration and Licenses</h3>
+                <p>Complete assistance with business registration and acquiring necessary licenses.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tags"></i>
+                <h3>Pricing Packages</h3>
+                <p>Transparent and flexible pricing plans tailored to suit your business needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us" class="why-choose-us py-2 md:py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800">
+                Why Choose Our Consultancy?
+            </h2>
+            <div class="w-40 sm:w-48 md:w-64 h-1 bg-yellow-500 mx-auto mt-2">
+            </div>
+        </div>
+        <p>We take pride in offering exceptional service with a client-first approach:</p>
+
+        <p><strong>✔ 30+ Years of Experience:</strong> Trusted by businesses since 1991, delivering proven results.</p>
+        <p><strong>✔ Expert Financial Guidance:</strong> Comprehensive tax strategies to maximize your savings and
+            compliance.</p>
+        <p><strong>✔ Personalized Solutions:</strong> Tailored strategies to match your unique business requirements.
+        </p>
+        <p><strong>✔ Seamless Service Delivery:</strong> From registration to audits, we handle everything so you can
+            focus on growth.</p>
+    </section>
+
+    <section id="faq" class="faq py-2 md:py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800">
+                Frequently Asked Questions
+            </h2>
+            <div class="w-32 sm:w-48 md:w-80 h-1 bg-yellow-500 mx-auto mt-2">
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">What is GST and why is it important? <span>+</span></button>
+            <div class="faq-answer">
+                <p>GST (Goods and Services Tax) is a value-added tax levied on most goods and services sold for domestic
+                    consumption. It helps streamline taxation and makes compliance easier for businesses.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">How can I register for GST? <span>+</span></button>
+            <div class="faq-answer">
+                <p>You can register for GST through the government portal, but our team can handle the entire process
+                    for you to make it quick and hassle-free!</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">What are the penalties for late GST filing? <span>+</span></button>
+            <div class="faq-answer">
+                <p>Late GST filing can result in penalties and interest charges. We help you stay compliant and file
+                    your returns on time to avoid unnecessary fees.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">What documents are required for GST registration? <span>+</span></button>
+            <div class="faq-answer">
+                <p>You’ll need documents like PAN card, proof of business registration, identity and address proof, and
+                    bank account details. We can guide you through the entire documentation process!</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Can I claim Input Tax Credit (ITC) on all purchases? <span>+</span></button>
+            <div class="faq-answer">
+                <p>You can claim ITC on purchases used for business purposes, but certain restrictions apply. Our team
+                    can help you maximize your ITC claims while staying compliant with GST laws.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact-us">
+        <div class="containers">
+            <div class="text-center mb-4">
+                <h2 class="text-3xl font-bold text-gray-800">
+                    Contact Us
+                </h2>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mt-2">
+                </div>
+            </div>
+            <p>Have questions? Reach out to us anytime!</p>
+
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <form id="contactForm" class="contact-form"
+                    action="https://script.google.com/macros/s/AKfycbxVjYHW3xx8qiZl38CVk2-orXgTkNYqlssH7TMFkIymUL1asFYrOlC6OClbYGTJSrvW/exec"
+                    method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="number" name="mobile" placeholder="Mobile number" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+
+
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <a href="#" target="_blank"><i class="bx bx-map"></i>10/1,
+                        M.V.Badran Street, Anaikar Complex, Periamet, Chennai-3, Tamil Nadu.
+                    </a>
+                    <a href="callto:+919003111190"><i class="bx bx-phone"></i> +91 90031 11190</a>
+                    <a href="mailto:hilalassociates29@gmail.com"><i
+                            class='bx bxl-gmail'></i>hilalassociates29@gmail.com</a>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.254797768896!2d80.26453077484342!3d13.083031687242679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265e2cfaef053%3A0xfc7304426d943580!2sAnaikar%20Complex%20Mosque!5e0!3m2!1sen!2sin!4v1741764368324!5m2!1sen!2sin"
+                        width="400" height="350" style="border:0; width: 100%; height: auto; min-height: 200px;"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <p>Copyright © 2025 Hilal Associates. All Rights Reserved.</p>
+    </footer>
+
+
+    <script>
+        const faqButtons = document.querySelectorAll('.faq-question');
+        faqButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                button.classList.toggle('active');
+                const answer = button.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.navbar ul li a');
+
+            function changeActiveLink() {
+                let currentSection = '';
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+
+                    if (scrollY >= sectionTop - sectionHeight / 3) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(currentSection)) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', changeActiveLink);
+        });
+        // Get the modal
+        var modal = document.getElementById("myConsultant");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
